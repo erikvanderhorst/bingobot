@@ -1,0 +1,54 @@
+body {
+    background-color: #0e2e4c;
+    color: #fff;
+}
+
+nav {
+    height: 100px;
+    background-color: #02062d;
+    position: relative;
+    z-index: 3;
+}
+
+nav .logo-wrapper {
+    width: 171px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+nav .logo-wrapper img {
+    width: 171px;
+    border-radius: 5px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    font-size: 1.0em;
+}
+
+nav ul li a {
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    padding: 35px;
+    display: block;
+    text-decoration: none;
+    font-family: ubuntu;
+}
+
+nav .nav-left {
+    float: left;
+}
+
+nav .nav-right {
+    float: right;
+}
