@@ -52,3 +52,21 @@ nav .nav-left {
 nav .nav-right {
     float: right;
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    nav ul li a {
+        padding: 35px 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav ul li a {
+        padding: 35px 6px;
+    }
+}
+
+/*@media only (min-width: 768px) and (max-width: 991px) {*/
+/*    nav ul li a {*/
+/*        padding: 35px 6px !important;*/
+/*    }*/
+/*}*/
