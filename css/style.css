@@ -20,7 +20,7 @@ nav .logo-wrapper {
 
 nav .logo-wrapper img {
     width: 171px;
-    border-radius: 5px;
+    border-radius: 20px;
 
 }
 
@@ -51,6 +51,15 @@ nav .nav-left {
 
 nav .nav-right {
     float: right;
+}
+
+#slider .header-image {
+    background-image: url(../img/header_image.png);
+    height: 500px;
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
