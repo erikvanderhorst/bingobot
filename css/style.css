@@ -1,6 +1,6 @@
 body {
     background-color: #0e2e4c;
-    color: #fff;
+    color: blue;
 }
 
 nav {
@@ -61,6 +61,30 @@ nav .nav-right {
     background-repeat: no-repeat;
 
 }
+
+#cards{
+    margin-top: -75px;
+}
+
+#cards .card {
+    background:#02062d;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#cards .card h3 {
+    font-family: ubuntu;
+    color:#fff;
+}
+#cards .card p {
+    color: #fff;
+}
+#cards .card img {
+    width: 96px;
+}
+
+
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
     nav ul li a {
