@@ -1,6 +1,13 @@
+
 body {
     background-color: #0e2e4c;
     color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
 }
 
 nav {
@@ -57,33 +64,54 @@ nav .nav-right {
     background-image: url(../img/header_image.png);
     height: 500px;
     background-position: center;
-    background-size:auto;
+    background-size: auto;
     background-repeat: no-repeat;
 
 }
 
-#cards{
+#cards {
     margin-top: -75px;
 }
 
 #cards .card {
-    background:#02062d;
+    background: #02062d;
     align-items: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    /*border-top-left-radius: 20px;*/
+    /*border-top-right-radius: 20px;*/
 }
+
+#cards a :hover {
+    transform: scale(1.1) ;
+}
+
 #cards .card h3 {
+    transform: scale(1.1) ;
+
     font-family: ubuntu;
-    color:#fff;
+    color: #fff;
 }
+
 #cards .card p {
     color: #fff;
 }
+
 #cards .card img {
     width: 96px;
 }
 
+#content-img {
+    background-color: #fff;
+    margin-top: -50px;
+    padding-top: 100px;
+}
 
+#content-img h3 {
+}
+
+#content-img p {
+}
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
