@@ -1,18 +1,42 @@
 <header>
-    <nav>
+    <nav class="mobile-nav">
+        <div class="nav-toggle-mobile visible-xs hidden-sm hidden-md hidden-lg nav-hidden">
+            <button class="nav-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
         <a class="logo-wrapper" href="#">
-            <img src="img/logo.jpg" alt="Bingobot" >
+            <img src="img/logo.jpg" alt="Bingobot">
         </a>
-        <div class="container">
+        <div class="navigation nav-visible-mobile">
             <ul class="nav-left">
                 <li><a href="#">Over bingobot</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Foto's</a></li>
             </ul>
             <ul class="nav-right">
-                <li><a href="#">Foto's</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#">Electro</a></li>
+                <li><a href="#">Werktuigbouwkund</a></li>
+                <li><a href="#">Software</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="pc-nav">
+        <a class="logo-wrapper" href="#">
+            <img src="img/logo.jpg" alt="Bingobot">
+        </a>
+        <div class="container">
+            <ul class="left-nav">
                 <li><a href="#">Over bingobot</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Foto's</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="#">Electro</a></li>
+                <li><a href="#">Werktuigbouwkund</a></li>
+                <li><a href="#">Software</a></li>
             </ul>
         </div>
     </nav>

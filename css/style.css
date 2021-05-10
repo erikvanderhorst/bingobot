@@ -10,14 +10,19 @@ a {
 
 }
 
-nav {
+nav.mobile-nav {
+    display: none;
+
+}
+
+nav.pc-nav {
     height: 100px;
     background-color: #02062d;
     position: relative;
     z-index: 3;
 }
 
-nav .logo-wrapper {
+nav.pc-nav .logo-wrapper {
     width: 171px;
     position: absolute;
     left: 0;
@@ -25,38 +30,37 @@ nav .logo-wrapper {
     margin: auto;
 }
 
-nav .logo-wrapper img {
+nav.pc-nav .logo-wrapper img {
     width: 171px;
     border-radius: 20px;
-
 }
 
-nav ul {
+nav.pc-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+nav.pc-nav ul li {
     float: left;
     font-size: 1.0em;
 }
 
-nav ul li a {
+nav.pc-nav ul li a {
     color: #bbb;
     text-transform: uppercase;
     font-size: 1.0em;
-    padding: 35px;
+    padding: 35px 35px;
     display: block;
     text-decoration: none;
     font-family: ubuntu;
 }
 
-nav .nav-left {
+nav.pc-nav .left-nav {
     float: left;
 }
 
-nav .nav-right {
+nav.pc-nav .right-nav {
     float: right;
 }
 
@@ -137,35 +141,198 @@ footer h3 {
     font-size: 1.2em;
     color: #fff;
 }
+
 footer img {
     border-radius: 20px;
 }
+
 footer ul {
     list-style-type: none;
     padding: 0;
 }
+
 footer ul li {
     margin-bottom: 8px;
 
 }
-footer ul li a{
+
+footer ul li a {
     color: #fff;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    nav ul li a {
+@media (min-width: 1200px) and (max-width: 1400px) {
+    nav.pc-nav ul li a {
         padding: 35px 20px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    nav ul li a {
-        padding: 35px 6px;
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    nav.pc-nav ul li a {
+        padding: 40px 20px;
+        font-size: 0.8em;
+    }
+
+    #cards .card h3 {
+        font-size: 1.2em;
+    }
+
+    #cards .card-text {
+        font-size: 1em;
     }
 }
 
-/*@media only (min-width: 768px) and (max-width: 991px) {*/
-/*    nav ul li a {*/
-/*        padding: 35px 6px !important;*/
-/*    }*/
-/*}*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #cards .card h3 {
+        font-size: 1em;
+    }
+
+    #cards .card-text {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #cards .card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    footer img{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    nav.mobile-nav {
+        display: block;
+    }
+
+    nav.pc-nav {
+        display: none !important;
+    }
+
+    nav.mobile-nav {
+        height: 100px;
+        background-color: #02062d;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+
+    nav.mobile-nav .logo-wrapper {
+        width: 171px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    nav.mobile-nav .logo-wrapper img {
+        width: 171px;
+        border-radius: 20px;
+    }
+
+    nav.mobile-nav .nav-toggle-mobile {
+        position: absolute;
+        right: 30px;
+        top: 26px;
+        margin: 0;
+        padding: 0;
+        z-index: 101;
+    }
+
+    nav.mobile-nav .navigation {
+        position: fixed;
+        top: 92px;
+        left: -100%;
+        bottom: 0;
+        width: 100%;
+        background-color: #02062d;
+        z-index: 100;
+        -webkit-transition: left .6s ease;
+        transition: left .6s ease;
+    }
+
+    nav.mobile-nav .navigation.active {
+        left: 0;
+    }
+
+    nav.mobile-nav .nav-toggle-mobile button {
+        background: none;
+        border: 0;
+        padding: 10px;
+    }
+
+    nav.mobile-nav .nav-toggle-mobile button span.bar {
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background: #eee;
+        display: block;
+        margin-bottom: 5px;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    /*nav.mobile-nav .nav-toggle-mobile.nav-hidden button span.bar:nth-child(2) {*/
+    /*    opacity: 1;*/
+    /*}*/
+    nav.mobile-nav .navigation ul.left-nav {
+        margin-top: 14px;
+    }
+
+    nav.mobile-nav .navigation ul {
+        clear: both;
+        width: 100%;
+    }
+
+    nav.mobile-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav.mobile-nav .navigation ul {
+        /*float: left;*/
+        clear: both;
+        width: 100%;
+    }
+
+    nav.mobile-nav ul.right-nav {
+        float: right;
+    }
+
+    nav.mobile-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav.mobile-nav ul {
+        color: #585858;
+    }
+
+    nav.mobile-nav ul li a {
+        color: #fff;
+    }
+
+
+    nav.mobile-nav .navigation ul li a {
+        text-align: center;
+        border-bottom: 1px solid #5c5c5c;
+        padding: 10px 0;
+    }
+
+    nav.mobile-nav ul li a {
+        color: #bbb;
+        text-transform: uppercase;
+        font-size: 1.0em;
+        padding: 35px;
+        display: block;
+    }
+
+
+}
