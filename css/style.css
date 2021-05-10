@@ -86,12 +86,12 @@ nav.pc-nav .right-nav {
     /*border-top-right-radius: 20px;*/
 }
 
-#cards a :hover {
-    transform: scale(1.1);
-}
+/*#cards a :hover {*/
+/*    transform: scale(1.1);*/
+/*}*/
 
 #cards .card h3 {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
 
     font-family: ubuntu;
     color: #fff;
