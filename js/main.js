@@ -2,8 +2,11 @@ $(function () {
     $(".nav-btn").click(function () {
         if ($('.navigation').hasClass('active')) {
             $('.navigation').removeClass('active');
+            $('.nav-btn').removeClass('nav-visible')
         } else {
             $('.navigation').addClass("active");
+            $('.nav-btn').addClass('nav-visible')
+
         }
     });
     // Same height images
