@@ -151,19 +151,30 @@ nav.pc-nav .right-nav {
     padding: 30px;
 }
 
- .bg-darkblue {
+.bg-darkblue {
     background-color: #02062d;
     padding: 30px;
     color: #fff;
+}
+
+.btn-darkblue {
+    background-color: #02062d;
+    color:#fff;
+}
+
+.text-darkblue {
+    color: #02062d;
 }
 
 footer {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#team img{
+
+#team img {
     width: 250px;
 }
+
 footer h3 {
     font-family: ubuntu;
     font-size: 1.2em;
