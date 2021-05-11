@@ -19,40 +19,24 @@ title: Werktuigbouwkunde
         </div>
     </div>
 </section>
-<section id="blog-holder " class="mt-5 ">
+<section id="blog-holder " class="mt-4 ">
     <div class="container">
         <div class="bg-white">
             <div class="row">
+                {% for post in site.posts %}
+                {% if post.category contains 'Werktuigbouwkunde' %}
                 <div class="col-md-4">
-                    <a href="#">
+                    <a href="/bingobot{{ post.url }}">
                         <div class="card bg-darkblue" style="">
-                            <img class="card-img-top img-fluid" src="img/blog/plannen.jpg" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="{{ post.image }}" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-white">Planning maken</h5>
+                                <h5 class="card-title text-center text-white">{{ post.title }}</h5>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card bg-darkblue" style="">
-                            <img class="card-img-top img-fluid" src="img/blog/ontwerpen.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title text-center text-white">ontwerp maken</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card bg-darkblue" style="">
-                            <img class="card-img-top img-fluid" src="img/blog/diagram.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title text-center text-white">diagram maken</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
