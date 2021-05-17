@@ -102,6 +102,9 @@ nav.pc-nav .right-nav {
     border-radius: 20px;
 }
 
+.card-img-top {
+    max-height: 300px;
+}
 
 #cards .card h3 {
     font-family: ubuntu;
@@ -316,18 +319,20 @@ footer ul li a {
         -webkit-transition: 0.3s;
         transition: 0.3s;
     }
+
     nav.mobile-nav .nav-toggle-mobile button.nav-visible span.bar:nth-child(1) {
         transform: rotate(45deg);
         top: 8px;
     }
+
     nav.mobile-nav .nav-toggle-mobile button.nav-visible span.bar:nth-child(2) {
         opacity: 0 !important;
     }
+
     nav.mobile-nav .nav-toggle-mobile button.nav-visible span.bar:nth-child(3) {
         transform: rotate(-45deg);
         top: -8px;
     }
-
 
 
     /*nav.mobile-nav .nav-toggle-mobile.nav-hidden button span.bar:nth-child(2) {*/
