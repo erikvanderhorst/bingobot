@@ -29,14 +29,16 @@
         </a>
         <div class="container">
             <ul class="left-nav">
-                <li><a href="/bingobot/over-bingobot.html">Over bingobot</a></li>
-                <li><a href="/bingobot/blog.html">Blog</a></li>
-                <li><a href="#">Foto's</a></li>
+                {% for nav in site.data.navigation limit:3 %}
+                <li><a {% if nav.url== page.url %} class="active" {% endif %} href="/bingobot{{ nav.url }}">{{ nav.text
+                    }}</a></li>
+                {% endfor %}
             </ul>
             <ul class="right-nav">
-                <li><a href="/bingobot/elektro.html">Elektro</a></li>
-                <li><a href="/bingobot/werktuigbouwkunde.html">Werktuigbouwkunde</a></li>
-                <li><a href="/bingobot/software.html">Software</a></li>
+                {% for nav in site.data.navigation limit:3 offset:3%}
+                <li><a {% if nav.url== page.url %} class="active" {% endif %} href="/bingobot{{ nav.url }}">{{ nav.text
+                    }}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </nav>

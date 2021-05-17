@@ -31,6 +31,7 @@ nav.pc-nav .logo-wrapper {
     margin: auto;
 }
 
+
 nav.pc-nav .logo-wrapper img {
     width: 171px;
     border-radius: 20px;
@@ -51,10 +52,22 @@ nav.pc-nav ul li a {
     color: #bbb;
     text-transform: uppercase;
     font-size: 1.0em;
-    padding: 35px 35px;
+    padding: 38px 35px;
     display: block;
     text-decoration: none;
     font-family: ubuntu;
+}
+
+nav.pc-nav ul li a.active {
+
+    background-color: #0e2e4c;
+    text-decoration: underline;
+}
+
+nav.pc-nav ul li a:hover {
+
+    background-color: #0e2e4c;
+    text-decoration: underline;
 }
 
 nav.pc-nav .left-nav {
@@ -101,6 +114,11 @@ nav.pc-nav .right-nav {
     padding: 30px;
     border-radius: 20px;
 }
+
+#cards .card:hover {
+    background-color: #101654;
+}
+
 
 .card-img-top {
     max-height: 300px;
