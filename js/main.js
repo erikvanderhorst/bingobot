@@ -27,3 +27,7 @@ $(function () {
     $('.card').height(highestCard);
 })
 
+function goBack() {
+    window.history.back();
+}
+
