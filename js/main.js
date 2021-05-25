@@ -25,6 +25,9 @@ $(function () {
         }
     });
     $('.card').height(highestCard);
+
+
+
 })
 
 function goBack() {
